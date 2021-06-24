@@ -36,4 +36,32 @@ public class HomeController {
 		return "home";
 	}
 	
+	
+	
+	@RequestMapping(value="/main.do")
+	public String main() {
+		return "main";
+	}
+	
+	
+	@RequestMapping(value="/loginForm.do")
+	public String loginForm() {
+		
+		return "loginForm";
+	}
+	
+	
+	
+	//회원가입 페이지로 이동
+	
+	
+	@RequestMapping(value="/signUpForm.do")
+	public String signUpForm() {
+		
+		return "signUpForm";
+	}
+	
+	
+	
+	
 }
